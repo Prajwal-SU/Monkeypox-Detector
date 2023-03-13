@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Karla:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.materialdesignicons.com/4.8.95/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+<style>
+body {
+    background-image: url('static/images/b.png');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: 100% 100%; 
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  width: 33.3%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+.about-section {
+  margin: 25px 50px 75px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  background-color: #d7ebf7c3;
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.title {
+  color: grey;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-dark bg-transparent">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="{{ url_for('base') }}">
+<img src="static/images/logo.png" width="130" alt="" class="d-inline-block align-middle mr-2">
+<span class="text-uppercase font-weight-bold">MonkeyPox Detector</span>
+</a>
+</div>
+<ul class="navbar-nav ml-auto">
+<li class="nav-item"> 
+<a href="#" class="btn btn-info btn-lg"> About
+</a>
+</li>
+</ul>
+<a></a>
+<a href="{{ url_for('logout') }}" class="btn btn-info btn-lg">Sign Out
+</a>         
+</div>
+</nav>
+<div class="about-section">
+  <h1>MonkeyPox Detector</h1>
+  <p>Monkeypox Detector is a web application where user or patient takes snapshot of the symptoms and uploads image in web portal and gets immediate results with accuracy. </p>
+  <p>The result predicts, whether the patient or user is affected by monkey pox or not and gets suggestions based on the accuracy. </p>
+  <p>Monkeypox is a zoonotic orthopoxviral that incidentally causes disease in humans like smallpox. </p>
+  <p>It may spread from infected animals by handling infected meat or via bites or scratches. </p>
+  <p>Human-to-human transmission can occur through exposure to infected body fluids or contaminated objects, by small droplets, and possibly through the airborne route. </p>
+  <p>Most cases are of African origin with symptoms like light fever, mouth ulcers, genital ulcers, weakness, skin lesions, body aches, and eye irritation.</p>
+  <p>To develop a monkeypox detector using deep learning, we need to collect a large dataset of images of skin with monkeypox and skin without monkeypox. </p>
+  <p>You would then train a neural network on this dataset, using an algorithm such as convolutional neural networks (CNNs).</p>
+  <p>Once the neural network has been trained, you can then use it to predict whether a person has monkeypox based on an image of their skin.</p>
+  <P>The scope of a monkeypox detector using deep learning would be to assist in the diagnosis of monkeypox based on images of skin lesions.</P> 
+  <p>The detector would be able to process an image of a person's skin and output a prediction of whether or not the person has monkeypox.</p>
+  <p>One potential limitation of a monkeypox detector using deep learning is that it may not be able to accurately diagnose all cases of monkeypox.</p>
+  <p>The accuracy of the detector would depend on the quality and size of the dataset used to train the model, as well as the effectiveness of the machine learning algorithm used.</p>
+  <p>It is also possible that the model may not be able to detect cases of monkeypox that have atypical clinical presentations or that are in the early stages of the disease.</p>
+</div>
+<div class="row">
+<div class="column"></div>
+</div>
+<div class="row">
+  <div class="column"></div>
+  </div>
+</body>
+</html>
